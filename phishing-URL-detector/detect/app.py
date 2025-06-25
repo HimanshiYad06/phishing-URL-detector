@@ -75,8 +75,9 @@ st.markdown("""Analyze URLs for phishing threats using advanced feature extracti
 # Load the model and APIs
 @st.cache_resource
 def load_resources():
-    model_path = os.path.join('model', 'phishing_model.pkl')
-    feature_names_path = os.path.join('model', 'feature_names.pkl')
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(BASE_DIR, 'model', 'phishing_model.pkl')
+    feature_names_path = os.path.join(BASE_DIR, 'model', 'feature_names.pkl')
     vt_api_key = "a207bfaf2f7e6a7e84db21bb0a2f8720f921be6aa13953142303cb92b3306388"
     gsb_api_key = "AIzaSyDasT0zXZrK2HiHxEoDb_-TjFfCXEXsajE"
     return {
