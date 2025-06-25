@@ -155,7 +155,7 @@ if st.button("Analyze URL") and url and model_loaded:
             st.markdown(f"""
                 <div class='{box_class}'>
                     <h3>{status_icon} {combined_status}</h3>
-                    <p>Based on analysis from VirusTotal and Google Safe Browsing</p>
+                    <p>Based on advanced feature extraction, pattern analysis, and a trained Random Forest machine learning model</p>
                 </div>
             """, unsafe_allow_html=True)
             
